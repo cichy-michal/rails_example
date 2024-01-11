@@ -1,0 +1,25 @@
+<div id="<%= dom_id friend %>">
+
+  <% if friend.user == current_user %> 
+  <p>
+  <tbody>
+    <tr>
+      <td>
+      <%= link_to friend.first_name + ' ' + friend.last_name, friend %>
+      </td>
+  </p>
+  <td>
+  <p>
+    <%= friend.email %>
+  </p>
+  </td>
+
+  <td>
+  <p>
+    <%= friend.twitter %>
+  </p>
+  </td>
+
+  <% end %>
+
+</div>
